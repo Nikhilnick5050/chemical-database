@@ -2,8 +2,7 @@
 A modern, searchable web application for exploring detailed information about laboratory chemicals.
 
 🔗 **Live Project:**  
-
-https://project-chemicaldatabases.vercel.app/
+https://chemical-database.vercel.app/
 
 ---
 
