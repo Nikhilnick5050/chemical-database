@@ -17,23 +17,6 @@
     --organic: #9b59b6;
 }
 
-.dark-theme {
-    --primary: #b9baf0;
-    --secondary: #3f5a2a;
-    --accent: #1f8f8f;
-    --light: #7a1c45;
-    --dark: #0a0a0a;
-    --gray-light: #9aa4b3;
-    --gray-medium: #6b7280;
-    --gray-dark: #1e242c;
-    --card-bg: rgba(20, 24, 30, 0.95);
-    --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
-    --success: #1e8a57;
-    --warning: #d4a60a;
-    --danger: #c0392b;
-    --info: #1f8f8f;
-    --organic: #6d3a9c;
-}
 
 /* Enhanced Particle System */
 .particles-container {
@@ -287,12 +270,12 @@ header.scrolled {
 }
 
 .logo {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
     object-fit: cover;
     border: 2px solid var(--accent);
-    animation: pulse 2s infinite;
+    animation: pulse 0s infinite;
 }
 
 @keyframes rotateLogo {
