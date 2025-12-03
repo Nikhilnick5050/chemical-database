@@ -11,6 +11,20 @@
 </head>
 
 <body>
+    <!-- Particles Background -->
+    <div class="particles-container">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
     <!-- Site Warning - REQUIRED ID: siteWarning -->
     <div class="site-warning" id="siteWarning">
         <div class="warning-content">
@@ -28,13 +42,13 @@
                 A big collection of 100 lab chemicals with all the safety stuff and what they do.
             </div>
 
-            <div class="features-list">
+            <ul class="features-list">
                 <li><i class="fas fa-check-circle"></i> 100 Chemical Stuff</li>
                 <li><i class="fas fa-check-circle"></i> Safety Info & Handling</li>
                 <li><i class="fas fa-check-circle"></i> Chemical Types</li>
                 <li><i class="fas fa-check-circle"></i> Search & Find Tools</li>
                 <li><i class="fas fa-check-circle"></i> Cool Lab Design</li>
-            </div>
+            </ul>
 
             <div class="loading-bar">
                 <!-- REQUIRED ID: loadingProgress -->
@@ -42,30 +56,30 @@
             </div>
 
             <div class="timer-display" id="timer">
-                 Auto Closing  in:
+                Auto Closing in:
                 <!-- REQUIRED ID: countdown --><span id="countdown">25</span> seconds
             </div>
 
-            <div class="social-links">
-                <a href="https://www.instagram.com/nikhilnick5046" class="social-link instagram" target="_blank">
+            <div class="warning-social-links">
+                <a href="https://www.instagram.com/nikhilnick5046" class="warning-social-link instagram" target="_blank">
                     <i class="fab fa-instagram"></i>
                 </a>
-                <a href="https://x.com/Nikhilnick5046" class="social-link twitter" target="_blank">
+                <a href="https://x.com/Nikhilnick5046" class="warning-social-link twitter" target="_blank">
                     <i class="fab fa-twitter"></i>
                 </a>
-                <a href="https://www.facebook.com/nikhil.nick.392111" class="social-link facebook" target="_blank">
+                <a href="https://www.facebook.com/nikhil.nick.392111" class="warning-social-link facebook" target="_blank">
                     <i class="fab fa-facebook-f"></i>
                 </a>
-                <a href="https://github.com/Nikhilnick5050" class="social-link github" target="_blank">
+                <a href="https://github.com/Nikhilnick5050" class="warning-social-link github" target="_blank">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/nikhil-shinde-286937367" class="social-link linkedin" target="_blank">
+                <a href="https://www.linkedin.com/in/nikhil-shinde-286937367" class="warning-social-link linkedin" target="_blank">
                     <i class="fab fa-linkedin-in"></i>
                 </a>
             </div>
 
             <div class="developer-info">
-                Develop  by  Nikhil Shinde<br>Call me: 8623947038
+                Developed by Nikhil Shinde<br>Call me: 8623947038
             </div>
         </div>
     </div>
@@ -107,9 +121,9 @@
     <section class="hero" id="home">
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">Body Count  </h1>
-                <p class="hero-subtitle">A big study of 100 important chemicals used in science labs everywhere</p>
-                <a href="#chemicals" class="hero-btn">See Chemicals</a>
+                <h1 class="hero-title">Laboratory Chemicals Database</h1>
+                <p class="hero-subtitle">A comprehensive study of 100 important chemicals used in science labs everywhere</p>
+                <a href="#chemicals" class="hero-btn">Explore Chemicals</a>
             </div>
         </div>
     </section>
@@ -117,18 +131,12 @@
     <!-- Introduction Section -->
     <section id="introduction">
         <div class="container">
-            <h2 class="section-title">About This</h2>
+            <h2 class="section-title">About This Project</h2>
             <div class="introduction-content">
-                <p>Chemistry is like one of the most coolest parts of science because it tells us what stuff is made of, how it acts, and what it can do. It's like the base for many other sciences like biology, physics, medicine, building things, and enviroment
-                    stuff.
-                </p>
-                <p>In every chemistry lab, there's lots of different chemicals used for doing experiments, research, and learning how things work in real life. Some chemicals are natural, some are made by people, some are from living things, some from non-living
-                    things.
-                </p>
-                <p>They use chemicals to make reactions happen, make solutions, find out what something is, and study different things. Some chemicals are used to test reactions, some to dissolve stuff, and some to make reactions go faster without getting
-                    used up.</p>
-                <p>Learning about lab chemicals means knowing what they look like, what they do, how to use them, what bad things can happen, and how to be safe. While chemicals help us discover new things, they can also be dangerous if we don't use them
-                    right or are careless.</p>
+                <p>Chemistry is one of the most fundamental branches of science as it explains the composition, properties, and transformations of matter. It serves as the foundation for numerous other scientific disciplines including biology, physics, medicine, engineering, and environmental science.</p>
+                <p>In every chemistry laboratory, numerous chemicals are employed for experimentation, research, and practical applications. These chemicals range from naturally occurring substances to synthetically produced compounds, including organic and inorganic materials.</p>
+                <p>Chemicals are utilized to initiate reactions, prepare solutions, conduct analyses, and study various phenomena. Some serve as reactants, others as solvents, and some as catalysts that accelerate reactions without being consumed.</p>
+                <p>Understanding laboratory chemicals involves knowledge of their properties, functions, applications, hazards, and safety protocols. While chemicals enable discovery and innovation, they also pose potential risks if mishandled or used without proper precautions.</p>
             </div>
         </div>
     </section>
@@ -139,10 +147,10 @@
             <div class="search-container">
                 <div class="search-box">
                     <!-- REQUIRED ID: searchInput -->
-                    <input type="text" class="search-input" id="searchInput" placeholder="Find a chemical by name, formula, or what it does...">
+                    <input type="text" class="search-input" id="searchInput" placeholder="Find a chemical by name, formula, or properties...">
                     <!-- REQUIRED ID: searchBtn -->
                     <button class="search-btn" id="searchBtn">
-                        <i class="fas fa-search"></i>
+                        <i class="fas fa-search"></i> Search
                     </button>
                 </div>
             </div>
@@ -196,7 +204,7 @@
         <div class="container">
             <h2 class="section-title">Sources & References</h2>
             <div class="references-content">
-                <p>The info for this project about "Common Lab Chemicals" was collected from good science websites, learning sites, and chemistry books.</p>
+                <p>The information for this project on "Common Laboratory Chemicals" was compiled from reputable scientific databases, educational resources, and chemistry textbooks.</p>
 
                 <div class="references-panel">
                     <div class="references-grid">
@@ -205,12 +213,11 @@
                             <ul>
                                 <li><a href="https://pubchem.ncbi.nlm.nih.gov" target="_blank">PubChem - U.S. National Library of Medicine</a></li>
                                 <li><a href="https://www.chemspider.com" target="_blank">ChemSpider - Chemical Structures Database</a></li>
-
                             </ul>
                         </div>
 
                         <div class="reference-category">
-                            <h3><i class="fas fa-graduation-cap"></i> Learning Stuff</h3>
+                            <h3><i class="fas fa-graduation-cap"></i> Educational Resources</h3>
                             <ul>
                                 <li><a href="https://chem.libretexts.org" target="_blank">LibreTexts Chemistry</a></li>
                                 <li><a href="https://www.ck12.org/chemistry" target="_blank">CK-12 Chemistry Textbook</a></li>
@@ -219,21 +226,20 @@
                         </div>
 
                         <div class="reference-category">
-                            <h3><i class="fas fa-shield-alt"></i> Safety & Rules</h3>
+                            <h3><i class="fas fa-shield-alt"></i> Safety & Regulations</h3>
                             <ul>
-                                <p>
-                                    Chemical names were collected from the PCCOE Chemistry Laboratory. The sources of the chemicals were obtained from the same lab. Additional information related to the chemicals was documented for the project. All the collected data was verified during
-                                    our visit to the PCCOE Chemistry Lab. This work was carried out under the guidance of Dr. Amol Kharche.
-                                </p>
+                                <li>Chemical Safety Data Sheets (SDS)</li>
+                                <li>OSHA Laboratory Safety Standards</li>
+                                <li>NFPA Hazard Rating System</li>
                             </ul>
                         </div>
 
                         <div class="reference-category">
-                            <h3><i class="fas fa-flask"></i> Lab Resources</h3>
+                            <h3><i class="fas fa-flask"></i> Laboratory Resources</h3>
                             <ul>
-                                <p>
-                                    Additional references were collected from open-access chemistry databases, educational YouTube channels, government science portals, and laboratory manuals used in academic institutions.
-                                </p>
+                                <li>PCCOE Chemistry Laboratory Manuals</li>
+                                <li>Academic Chemistry Textbooks</li>
+                                <li>Open Educational Resources</li>
                             </ul>
                         </div>
                     </div>
@@ -247,14 +253,13 @@
         <div class="container">
             <h2 class="section-title">Acknowledgement</h2>
             <div class="acknowledgement-content">
-                <p>We want to say a big thank you to our guide <strong> Dr. Amol Kharche</strong> for his help, guidance, and support during this project. His good ideas and knowledge helped us understand how chemicals work, what bad effects they can have,
-                    and why they're important.</p>
-                <p>We also thank the Chemistry Department, PCCOE, for giving us the stuff and lab to do this study. Finally, thanks to our classmates, friends, and family for helping us out.</p>
-                <p><strong>- Nikhil Shinde
-                    <br> - Aniket Khope
-                    <br> - Om Malge 
-                    <br> - Piyush Waghmare
-                </strong></p>
+                <p>We extend our sincere gratitude to our project guide <strong>Dr. Amol Kharche</strong> for his invaluable guidance, support, and mentorship throughout this project. His expertise and insights have been instrumental in helping us understand chemical properties, safety considerations, and laboratory applications.</p>
+                <p>We also thank the Chemistry Department of PCCOE for providing the necessary resources and laboratory access for this study. Special thanks to our classmates, friends, and family for their encouragement and support.</p>
+                <p><strong>Project Team:<br>
+                    - Nikhil Shinde<br>
+                    - Aniket Khope<br>
+                    - Om Malge<br>
+                    - Piyush Waghmare</strong></p>
             </div>
         </div>
     </section>
@@ -315,16 +320,16 @@
 
             <!-- GitHub Profiles Section -->
             <section class="github-section">
-                <h1 class="github-title">Development Team</h1>
+                <h2 class="github-title">Development Team</h2>
                 <p class="github-subtitle">Connect with the developers</p>
 
                 <div class="profiles-container">
                     <!-- Nikhil's Profile -->
                     <div class="profile-card">
                         <i class="fab fa-github profile-icon"></i>
-                        <h2 class="profile-name">Nikhil Shinde</h2>
-                        <p class="profile-username"></p>
-                        <div class="social-links">
+                        <h3 class="profile-name">Nikhil Shinde</h3>
+                        <p class="profile-username">Project Lead</p>
+                        <div class="profile-social-links">
                             <a href="https://github.com/Nikhilnick5050" class="social-link github-link" target="_blank">
                                 <i class="fab fa-github"></i>
                             </a>
@@ -336,26 +341,25 @@
 
                     <!-- Om's Profile -->
                     <div class="profile-card">
-                    <i class="fab fa-github profile-icon"></i>
-                       <h2 class="profile-name">Om Malghe</h2>
-                      <p class="profile-username"></p>
-                        <div class="social-links">
-                       <a href="https://github.com/ommalghe" class="social-link github-link" target="_blank">
-                      <i class="fab fa-github"></i>
-                                 </a>
-                      <a href="https://www.linkedin.com/in/om-malghe-85a58239a" class="social-link" target="_blank">
-                            <i class="fab fa-linkedin"></i>
-                              </a>
-                            </div>
-                    
+                        <i class="fab fa-github profile-icon"></i>
+                        <h3 class="profile-name">Om Malghe</h3>
+                        <p class="profile-username">Frontend Developer</p>
+                        <div class="profile-social-links">
+                            <a href="https://github.com/ommalghe" class="social-link github-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/om-malghe-85a58239a" class="social-link" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
                     </div>
 
                     <!-- Aniket's Profile -->
                     <div class="profile-card">
                         <i class="fab fa-github profile-icon"></i>
-                        <h2 class="profile-name">Aniket Khope</h2>
-                        <p class="profile-username"></p>
-                        <div class="social-links">
+                        <h3 class="profile-name">Aniket Khope</h3>
+                        <p class="profile-username">Data Researcher</p>
+                        <div class="profile-social-links">
                             <a href="https://github.com/aniketkhope2106-spec" class="social-link github-link" target="_blank">
                                 <i class="fab fa-github"></i>
                             </a>
@@ -368,9 +372,9 @@
                     <!-- Piyush's Profile -->
                     <div class="profile-card">
                         <i class="fab fa-github profile-icon"></i>
-                        <h2 class="profile-name">Piyush Waghmare </h2>
-                        <p class="profile-username"></p>
-                        <div class="social-links">
+                        <h3 class="profile-name">Piyush Waghmare</h3>
+                        <p class="profile-username">Content Specialist</p>
+                        <div class="profile-social-links">
                             <a href="https://github.com/piyushwaghmare9" class="social-link github-link" target="_blank">
                                 <i class="fab fa-github"></i>
                             </a>
@@ -389,7 +393,7 @@
                     <strong>Nikhil Shinde</strong>, <strong>Om Malghe</strong>,
                     <strong>Aniket Khope</strong>, <strong>Piyush Waghmare</strong>.
                 </p>
-                <p>Lab Chemicals Database | School Research Project</p>
+                <p>Laboratory Chemicals Database | Academic Research Project</p>
             </section>
         </div>
     </footer>
@@ -398,7 +402,7 @@
     <div class="source-code-bar">
         <div class="container">
             <p>
-                <i class="fab fa-github"></i> See the code for this project on GitHub:
+                <i class="fab fa-github"></i> View the source code for this project on GitHub:
                 <a href="https://github.com/nikhilnick5050/chemical-databases" target="_blank">
                     https://github.com/nikhilnick5050/chemical-databases
                 </a>
@@ -411,19 +415,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
