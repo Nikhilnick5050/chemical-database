@@ -469,14 +469,16 @@
     <footer class="footer" id="mainFooter">
         <div class="container">
             <!-- Contact Section with WhatsApp Numbers -->
-        <style>
+       <style>
     body {
-        background: #2b3d50; /* your website's blue background */
+        background: #2b3d50; /* dark blue background */
         font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
     }
 
     .contact-section {
-        background: transparent;   /* no black box */
+        background: transparent;   /* transparent section */
         padding: 60px 20px;
         margin: 40px auto;
         width: 90%;
@@ -504,11 +506,17 @@
         background: rgba(0, 0, 0, 0.1); /* light transparent */
         padding: 25px;
         border-radius: 20px;
-        backdrop-filter: blur(5px); /* glass look */
+        backdrop-filter: blur(5px); /* glass effect */
         box-shadow: 0 0 25px #00ff84;
         text-align: center;
         width: 260px;
         border: 1px solid rgba(0, 255, 132, 0.3);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .contact-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 35px #00ff84;
     }
 
     .contact-card h3 {
@@ -532,6 +540,7 @@
         font-weight: 600;
         text-decoration: none;
         box-shadow: 0 0 10px #00ff84;
+        transition: transform 0.2s, opacity 0.2s;
     }
 
     .call-btn {
@@ -542,16 +551,15 @@
         font-weight: 600;
         text-decoration: none;
         box-shadow: 0 0 10px #009cff;
+        transition: transform 0.2s, opacity 0.2s;
     }
 
     .wa-btn:hover,
     .call-btn:hover {
         opacity: 0.85;
         transform: scale(1.05);
-        transition: 0.2s;
     }
 </style>
-
 
 <section class="contact-section">
     <h2 class="contact-title">Contact Us</h2>
@@ -561,37 +569,38 @@
         <div class="contact-card">
             <h3>Nikhil Shinde</h3>
             <div class="btn-group">
-                <a href="+918623947038" class="wa-btn">WhatsApp</a>
-                <a href="+918623947038" class="call-btn">Call</a>
+                <a href="https://wa.me/918623947038" target="_blank" class="wa-btn">WhatsApp</a>
+                <a href="tel:+918623947038" class="call-btn">Call</a>
             </div>
         </div>
 
         <div class="contact-card">
             <h3>Om Malghe</h3>
             <div class="btn-group">
-                <a href="+917715007222" class="wa-btn">WhatsApp</a>
-                <a href="+917715007222" class="call-btn">Call</a>
+                <a href="https://wa.me/917715007222" target="_blank" class="wa-btn">WhatsApp</a>
+                <a href="tel:+917715007222" class="call-btn">Call</a>
             </div>
         </div>
 
         <div class="contact-card">
             <h3>Aniket Khope</h3>
             <div class="btn-group">
-                <a href="+919730318530" class="wa-btn">WhatsApp</a>
-                <a href="+919730318530" class="call-btn">Call</a>
+                <a href="https://wa.me/919730318530" target="_blank" class="wa-btn">WhatsApp</a>
+                <a href="tel:+919730318530" class="call-btn">Call</a>
             </div>
         </div>
 
         <div class="contact-card">
             <h3>Piyush Waghmare</h3>
             <div class="btn-group">
-                <a href="+918624980508" class="wa-btn">WhatsApp</a>
-                <a href="+918624980508" class="call-btn">Call</a>
+                <a href="https://wa.me/918624980508" target="_blank" class="wa-btn">WhatsApp</a>
+                <a href="tel:+918624980508" class="call-btn">Call</a>
             </div>
         </div>
 
     </div>
 </section>
+
 
 
             <!-- GitHub Profiles Section -->
