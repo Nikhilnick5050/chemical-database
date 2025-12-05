@@ -1013,12 +1013,7 @@ section {
 /* References Panel */
 
 
-.references-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 25px;
-    margin-top: 25px;
-}
+
 
 .reference-category {
     background: rgba(255, 255, 255, 0.05);
@@ -1028,48 +1023,6 @@ section {
     border: 1px solid var(--gray-light);
 }
 
-.reference-category:hover {
-    transform: translateY(-5px) scale(1.02);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-    border-color: var(--accent);
-}
-
-.reference-category h3 {
-    font-size: 1.2rem;
-    margin-bottom: 18px;
-    color: var(--primary);
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-weight: 600;
-}
-
-.reference-category ul {
-    list-style: none;
-}
-
-.reference-category li {
-    margin-bottom: 10px;
-    transition: var(--transition);
-}
-
-.reference-category li:hover {
-    transform: translateX(5px);
-}
-
-.reference-category a {
-    color: var(--accent);
-    text-decoration: none;
-    transition: var(--transition);
-    font-size: 0.95rem;
-    display: block;
-    padding: 5px 0;
-}
-
-.reference-category a:hover {
-    color: var(--primary);
-    text-decoration: underline;
-}
 
 /* Footer Styling - Fixed blue color */
 .footer {
@@ -1980,6 +1933,7 @@ button:focus-visible,
     transition: all 0.3s ease !important;
     text-decoration: none !important;
 }
+
 
 
 
