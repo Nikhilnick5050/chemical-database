@@ -310,20 +310,61 @@
     </section>
 
     <!-- Acknowledgement Section -->
-    <section id="acknowledgement">
-        <div class="container">
-            <h2 class="section-title">Acknowledgement</h2>
-            <div class="acknowledgement-content">
-                <p>We extend our sincere gratitude to our project guide <strong>Dr. Amol Kharche</strong> for his invaluable guidance, support, and mentorship throughout this project. His expertise and insights have been instrumental in helping us understand chemical properties, safety considerations, and laboratory applications.</p>
-                <p>We also thank the Chemistry Department of PCCOE for providing the necessary resources and laboratory access for this study. Special thanks to our classmates, friends, and family for their encouragement and support.</p>
-                <p><strong>Project Team:<br>
-                    - Nikhil Shinde<br>
-                    - Aniket Khope<br>
-                    - Om Malge<br>
-                    - Piyush Waghmare</strong></p>
-            </div>
+   <style>
+    /* Section – Transparent without frost/blur */
+    #acknowledgement {
+        background: rgba(255, 255, 255, 0.08); /* light transparent */
+        padding: 60px 20px;
+        border-radius: 20px;
+        border: 2px solid rgba(255, 255, 255, 0.18);
+        box-shadow: 0 0 25px rgba(0, 255, 132, 0.25);
+        margin: 60px auto;
+        width: 90%;
+        max-width: 1200px;
+        animation: fadeInSection 1.2s ease forwards;
+    }
+
+    /* Title (bold + neon) */
+    #acknowledgement .section-title {
+        text-align: center;
+        font-size: 2.4rem;
+        font-weight: 900;
+        color: #00ffb0;
+        margin-bottom: 30px;
+        text-shadow: 0 0 15px #00ff84;
+        animation: fadeInText 1.2s ease;
+    }
+
+    /* Paragraph styling */
+    .acknowledgement-content p {
+        font-size: 1.15rem;
+        line-height: 1.8;
+        color: #e8e8e8;
+        font-weight: 700;
+        margin-bottom: 18px;
+        animation: fadeParagraphs 1.4s ease;
+    }
+</style>
+
+<section id="acknowledgement">
+    <div class="container">
+        <h2 class="section-title">Acknowledgement</h2>
+
+        <div class="acknowledgement-content">
+            <p>We extend our sincere gratitude to our project guide <strong>Dr. Amol Kharche</strong> for his invaluable guidance, support, and mentorship throughout this project. His expertise and insights have been instrumental in helping us understand chemical properties, safety considerations, and laboratory applications.</p>
+
+            <p>We also thank the Chemistry Department of PCCOE for providing the necessary resources and laboratory access for this study. Special thanks to our classmates, friends, and family for their encouragement and support.</p>
+
+            <p><strong>Project Team:<br>
+                - Nikhil Shinde<br>
+                - Aniket Khope<br>
+                - Om Malge<br>
+                - Piyush Waghmare
+            </strong></p>
         </div>
-    </section>
+    </div>
+</section>
+
 
     <!-- Chemical Details Modal - REQUIRED ID: chemicalModal -->
     <div class="modal" id="chemicalModal">
@@ -571,6 +612,7 @@
 </body>
 
 </html>
+
 
 
 
