@@ -128,77 +128,56 @@
         </div>
     </section>
 
-   <style>
-    /* Section – White Background */
+  <style>
+    /* Section – Transparent without frost/blur */
     #introduction {
-        background: #ffffff;
+        background: rgba(255, 255, 255, 0.08); /* light transparent */
         padding: 60px 20px;
         border-radius: 20px;
-        border: 2px solid #e5e5e5;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        border: 2px solid rgba(255, 255, 255, 0.18);
+        box-shadow: 0 0 25px rgba(0, 255, 132, 0.25);
         margin: 60px auto;
         width: 90%;
         max-width: 1200px;
         animation: fadeInSection 1.2s ease forwards;
     }
 
-    /* Fade-in animation for the whole section */
     @keyframes fadeInSection {
-        0% {
-            opacity: 0;
-            transform: translateY(30px);
-        }
-        100% {
-            opacity: 1;
-            transform: translateY(0);
-        }
+        0% { opacity: 0; transform: translateY(30px); }
+        100% { opacity: 1; transform: translateY(0); }
     }
 
-    /* Section Title */
+    /* Title (bold + neon) */
     .section-title {
         text-align: center;
         font-size: 2.4rem;
-        font-weight: bold;
-        color: #1a3b5d;
+        font-weight: 900; /* BOLD */
+        color: #00ffb0;
         margin-bottom: 30px;
-        text-shadow: 0 0 8px rgba(0, 0, 0, 0.12);
+        text-shadow: 0 0 15px #00ff84;
         animation: fadeInText 1.2s ease;
     }
 
-    /* Text Fade-in Animation */
     @keyframes fadeInText {
-        from {
-            opacity: 0;
-            letter-spacing: 2px;
-        }
-        to {
-            opacity: 1;
-            letter-spacing: 0;
-        }
+        from { opacity: 0; letter-spacing: 2px; }
+        to { opacity: 1; letter-spacing: 0; }
     }
 
-    /* Text Content */
+    /* Paragraphs (bold + clean) */
     .introduction-content p {
-        font-size: 1.1rem;
-        line-height: 1.75;
-        color: #333;
+        font-size: 1.15rem;
+        line-height: 1.8;
+        color: #e8e8e8;
+        font-weight: 700; /* BOLD TEXT */
         margin-bottom: 18px;
         animation: fadeParagraphs 1.4s ease;
     }
 
-    /* Paragraph Animation */
     @keyframes fadeParagraphs {
-        0% {
-            opacity: 0;
-            transform: translateX(-20px);
-        }
-        100% {
-            opacity: 1;
-            transform: translateX(0);
-        }
+        0% { opacity: 0; transform: translateX(-20px); }
+        100% { opacity: 1; transform: translateX(0); }
     }
 
-    /* Container Layout */
     .container {
         max-width: 1000px;
         margin: auto;
@@ -206,21 +185,19 @@
 </style>
 
 
-<!-- Introduction Section -->
 <section id="introduction">
     <div class="container">
         <h2 class="section-title">About This Project</h2>
 
         <div class="introduction-content">
-            <p>Chemistry is one of the most fundamental branches of science as it explains the composition, properties, and transformations of matter. It serves as the foundation for numerous other scientific disciplines including biology, physics, medicine, engineering, and environmental science.</p>
+            <p>Chemistry is one of the most fundamental branches of science as it explains the composition, properties, and transformations of matter.</p>
 
-            <p>In every chemistry laboratory, numerous chemicals are employed for experimentation, research, and practical applications. These chemicals range from naturally occurring substances to synthetically produced compounds, including organic and inorganic materials.</p>
+            <p>In every chemistry laboratory, numerous chemicals are employed for experimentation, research, and practical applications.</p>
 
-            <p>Chemicals are utilized to initiate reactions, prepare solutions, conduct analyses, and study various phenomena. Some serve as reactants, others as solvents, and some as catalysts that accelerate reactions without being consumed.</p>
+            <p>Chemicals are utilized to initiate reactions, prepare solutions, conduct analyses, and study various phenomena.</p>
 
-            <p>Understanding laboratory chemicals involves knowledge of their properties, functions, applications, hazards, and safety protocols. While chemicals enable discovery and innovation, they also pose potential risks if mishandled or used without proper precautions.</p>
+            <p>Understanding laboratory chemicals involves knowledge of their properties, functions, applications, hazards, and safety protocols.</p>
         </div>
-
     </div>
 </section>
 
@@ -594,6 +571,7 @@
 </body>
 
 </html>
+
 
 
 
