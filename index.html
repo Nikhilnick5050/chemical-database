@@ -261,53 +261,132 @@
     </section>
 
     <!-- References Section -->
-    <section id="references">
-        <div class="container">
-            <h2 class="section-title">Sources & References</h2>
-            <div class="references-content">
-                <p>The information for this project on "Common Laboratory Chemicals" was compiled from reputable scientific databases, educational resources, and chemistry textbooks.</p>
+   <style>
+    /* Section – Transparent without frost/blur */
+    #references {
+        background: rgba(255, 255, 255, 0.08); /* light transparent */
+        padding: 60px 20px;
+        border-radius: 20px;
+        border: 2px solid rgba(255, 255, 255, 0.18);
+        box-shadow: 0 0 25px rgba(0, 255, 132, 0.25);
+        margin: 60px auto;
+        width: 90%;
+        max-width: 1200px;
+        animation: fadeInSection 1.2s ease forwards;
+    }
 
-                <div class="references-panel">
-                    <div class="references-grid">
-                        <div class="reference-category">
-                            <h3><i class="fas fa-database"></i> Chemical Databases</h3>
-                            <ul>
-                                <li><a href="https://pubchem.ncbi.nlm.nih.gov" target="_blank">PubChem - U.S. National Library of Medicine</a></li>
-                                <li><a href="https://www.chemspider.com" target="_blank">ChemSpider - Chemical Structures Database</a></li>
-                            </ul>
-                        </div>
+    /* Title (bold + neon) */
+    #references .section-title {
+        text-align: center;
+        font-size: 2.4rem;
+        font-weight: 900;
+        color: #00ffb0;
+        margin-bottom: 30px;
+        text-shadow: 0 0 15px #00ff84;
+        animation: fadeInText 1.2s ease;
+    }
 
-                        <div class="reference-category">
-                            <h3><i class="fas fa-graduation-cap"></i> Educational Resources</h3>
-                            <ul>
-                                <li><a href="https://chem.libretexts.org" target="_blank">LibreTexts Chemistry</a></li>
-                                <li><a href="https://www.ck12.org/chemistry" target="_blank">CK-12 Chemistry Textbook</a></li>
-                                <li><a href="https://www.chemguide.co.uk" target="_blank">ChemGuide - Learning Resource</a></li>
-                            </ul>
-                        </div>
+    /* Paragraph styling */
+    .references-content p {
+        font-size: 1.15rem;
+        line-height: 1.8;
+        color: #e8e8e8;
+        font-weight: 700;
+        margin-bottom: 18px;
+        animation: fadeParagraphs 1.4s ease;
+    }
 
-                        <div class="reference-category">
-                            <h3><i class="fas fa-shield-alt"></i> Safety & Regulations</h3>
-                            <ul>
-                                <li>Chemical Safety Data Sheets (SDS)</li>
-                                <li>OSHA Laboratory Safety Standards</li>
-                                <li>NFPA Hazard Rating System</li>
-                            </ul>
-                        </div>
+    /* References grid styling */
+    .references-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
+        margin-top: 30px;
+    }
 
-                        <div class="reference-category">
-                            <h3><i class="fas fa-flask"></i> Laboratory Resources</h3>
-                            <ul>
-                                <li>PCCOE Chemistry Laboratory Manuals</li>
-                                <li>Academic Chemistry Textbooks</li>
-                                <li>Open Educational Resources</li>
-                            </ul>
-                        </div>
+    .reference-category h3 {
+        font-size: 1.2rem;
+        font-weight: 800;
+        color: #00ffb0;
+        margin-bottom: 12px;
+        text-shadow: 0 0 10px #00ff84;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .reference-category ul {
+        list-style-type: disc;
+        padding-left: 20px;
+    }
+
+    .reference-category ul li {
+        margin-bottom: 8px;
+        font-weight: 700;
+        color: #e8e8e8;
+    }
+
+    .reference-category ul li a {
+        color: #00ffb0;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .reference-category ul li a:hover {
+        color: #00ffaa;
+        text-decoration: underline;
+    }
+</style>
+
+<section id="references">
+    <div class="container">
+        <h2 class="section-title">Sources & References</h2>
+
+        <div class="references-content">
+            <p>The information for this project on "Common Laboratory Chemicals" was compiled from reputable scientific databases, educational resources, and chemistry textbooks.</p>
+
+            <div class="references-panel">
+                <div class="references-grid">
+                    <div class="reference-category">
+                        <h3><i class="fas fa-database"></i> Chemical Databases</h3>
+                        <ul>
+                            <li><a href="https://pubchem.ncbi.nlm.nih.gov" target="_blank">PubChem - U.S. National Library of Medicine</a></li>
+                            <li><a href="https://www.chemspider.com" target="_blank">ChemSpider - Chemical Structures Database</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="reference-category">
+                        <h3><i class="fas fa-graduation-cap"></i> Educational Resources</h3>
+                        <ul>
+                            <li><a href="https://chem.libretexts.org" target="_blank">LibreTexts Chemistry</a></li>
+                            <li><a href="https://www.ck12.org/chemistry" target="_blank">CK-12 Chemistry Textbook</a></li>
+                            <li><a href="https://www.chemguide.co.uk" target="_blank">ChemGuide - Learning Resource</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="reference-category">
+                        <h3><i class="fas fa-shield-alt"></i> Safety & Regulations</h3>
+                        <ul>
+                            <li>Chemical Safety Data Sheets (SDS)</li>
+                            <li>OSHA Laboratory Safety Standards</li>
+                            <li>NFPA Hazard Rating System</li>
+                        </ul>
+                    </div>
+
+                    <div class="reference-category">
+                        <h3><i class="fas fa-flask"></i> Laboratory Resources</h3>
+                        <ul>
+                            <li>PCCOE Chemistry Laboratory Manuals</li>
+                            <li>Academic Chemistry Textbooks</li>
+                            <li>Open Educational Resources</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
     <!-- Acknowledgement Section -->
    <style>
@@ -612,6 +691,7 @@
 </body>
 
 </html>
+
 
 
 
