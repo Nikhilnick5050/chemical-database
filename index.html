@@ -288,35 +288,149 @@
     <footer class="footer" id="mainFooter">
         <div class="container">
             <!-- Contact Section with WhatsApp Numbers -->
-            <section class="contact-section">
-                <h2 class="contact-title">Contact Us</h2>
-                <div class="contact-container">
-                    <div class="contact-card">
-                        <div class="contact-name">Nikhil Shinde</div>
-                        <div class="contact-number">
-                            <i class="fab fa-whatsapp whatsapp-icon"></i> 8623947038
-                        </div>
-                    </div>
-                    <div class="contact-card">
-                        <div class="contact-name">Om Malghe</div>
-                        <div class="contact-number">
-                            <i class="fab fa-whatsapp whatsapp-icon"></i> 7715007222
-                        </div>
-                    </div>
-                    <div class="contact-card">
-                        <div class="contact-name">Aniket Khope</div>
-                        <div class="contact-number">
-                            <i class="fab fa-whatsapp whatsapp-icon"></i> 9730318530
-                        </div>
-                    </div>
-                    <div class="contact-card">
-                        <div class="contact-name">Piyush Waghmare</div>
-                        <div class="contact-number">
-                            <i class="fab fa-whatsapp whatsapp-icon"></i> 8624980508
-                        </div>
-                    </div>
-                </div>
-            </section>
+           <style>
+    .contact-section {
+        padding: 40px 20px;
+        text-align: center;
+        background: #f5f7fa;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .contact-title {
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 25px;
+    }
+
+    .contact-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 20px;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .contact-card {
+        background: #fff;
+        padding: 20px;
+        border-radius: 18px;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+        transition: transform .3s ease, box-shadow .3s ease;
+    }
+
+    .contact-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    }
+
+    .contact-name {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 12px;
+    }
+
+    .contact-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .btn {
+        padding: 10px 16px;
+        border-radius: 12px;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 600;
+        transition: .3s ease;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .btn-whatsapp {
+        background: #25D366;
+        color: white;
+    }
+
+    .btn-whatsapp:hover {
+        background: #1ebe5d;
+        transform: scale(1.05);
+    }
+
+    .btn-call {
+        background: #007BFF;
+        color: white;
+    }
+
+    .btn-call:hover {
+        background: #0064d4;
+        transform: scale(1.05);
+    }
+
+    .whatsapp-icon, .call-icon {
+        font-size: 16px;
+    }
+</style>
+
+<section class="contact-section">
+    <h2 class="contact-title">Contact Us</h2>
+
+    <div class="contact-container">
+
+        <!-- Nikhil -->
+        <div class="contact-card">
+            <div class="contact-name">Nikhil Shinde</div>
+            <div class="contact-buttons">
+                <a class="btn btn-whatsapp" href="https://wa.me/8623947038?text=Hello%20Nikhil%2C%20I%20need%20information" target="_blank">
+                    <i class="fab fa-whatsapp whatsapp-icon"></i> WhatsApp
+                </a>
+                <a class="btn btn-call" href="tel:+918623947038">
+                    <i class="fas fa-phone call-icon"></i> Call
+                </a>
+            </div>
+        </div>
+
+        <!-- Om -->
+        <div class="contact-card">
+            <div class="contact-name">Om Malghe</div>
+            <div class="contact-buttons">
+                <a class="btn btn-whatsapp" href="https://wa.me/7715007222?text=Hello%20Om%2C%20I%20need%20information" target="_blank">
+                    <i class="fab fa-whatsapp whatsapp-icon"></i> WhatsApp
+                </a>
+                <a class="btn btn-call" href="tel:+917715007222">
+                    <i class="fas fa-phone call-icon"></i> Call
+                </a>
+            </div>
+        </div>
+
+        <!-- Aniket -->
+        <div class="contact-card">
+            <div class="contact-name">Aniket Khope</div>
+            <div class="contact-buttons">
+                <a class="btn btn-whatsapp" href="https://wa.me/9730318530?text=Hello%20Aniket%2C%20I%20need%20information" target="_blank">
+                    <i class="fab fa-whatsapp whatsapp-icon"></i> WhatsApp
+                </a>
+                <a class="btn btn-call" href="tel:+919730318530">
+                    <i class="fas fa-phone call-icon"></i> Call
+                </a>
+            </div>
+        </div>
+
+        <!-- Piyush -->
+        <div class="contact-card">
+            <div class="contact-name">Piyush Waghmare</div>
+            <div class="contact-buttons">
+                <a class="btn btn-whatsapp" href="https://wa.me/8624980508?text=Hello%20Piyush%2C%20I%20need%20information" target="_blank">
+                    <i class="fab fa-whatsapp whatsapp-icon"></i> WhatsApp
+                </a>
+                <a class="btn btn-call" href="tel:+918624980508">
+                    <i class="fas fa-phone call-icon"></i> Call
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
 
             <!-- GitHub Profiles Section -->
             <section class="github-section">
@@ -415,6 +529,7 @@
 </body>
 
 </html>
+
 
 
 
