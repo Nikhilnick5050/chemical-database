@@ -1011,15 +1011,7 @@ section {
 }
 
 /* References Panel */
-.references-panel {
-    background: var(--card-bg);
-    border-radius: 15px;
-    padding: 35px;
-    margin-top: 50px;
-    box-shadow: var(--card-shadow);
-    border: 1px solid var(--gray-light);
-    animation: fadeInUp 0.8s ease-out;
-}
+
 
 .references-grid {
     display: grid;
@@ -1988,6 +1980,7 @@ button:focus-visible,
     transition: all 0.3s ease !important;
     text-decoration: none !important;
 }
+
 
 
 
