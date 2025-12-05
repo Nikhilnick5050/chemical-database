@@ -224,7 +224,7 @@ header {
     background-color: var(--primary);
     padding: 20px 0;
     position: fixed;
-    width: 100%;
+    width: 80%;
     top: 0;
     z-index: 1000;
     transition: var(--transition);
@@ -270,9 +270,9 @@ header.scrolled {
 }
 
 .logo {
-    width: 60px;
-    height: 60px;
-    border-radius: 60%;
+    width: 70px;
+    height: 70px;
+    border-radius: 70%;
     object-fit: cover;
     border: 2px solid var(--accent);
     animation: pulse 0s infinite;
@@ -1933,6 +1933,7 @@ button:focus-visible,
     transition: all 0.3s ease !important;
     text-decoration: none !important;
 }
+
 
 
 
