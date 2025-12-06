@@ -44,7 +44,7 @@
     background: radial-gradient(circle, rgba(39, 167, 167, 0.8) 0%, rgba(39, 167, 167, 0.2) 70%);
     top: 10%;
     left: 5%;
-    animation-duration: 25s;
+    animation-duration: 11s;
 }
 
 .particle:nth-child(2) {
@@ -53,7 +53,7 @@
     background: radial-gradient(circle, rgba(155, 89, 182, 0.7) 0%, rgba(155, 89, 182, 0.2) 70%);
     top: 60%;
     left: 80%;
-    animation-duration: 20s;
+    animation-duration: 11s;
 }
 
 .particle:nth-child(3) {
@@ -62,7 +62,7 @@
     background: radial-gradient(circle, rgba(46, 204, 113, 0.6) 0%, rgba(46, 204, 113, 0.2) 70%);
     top: 80%;
     left: 20%;
-    animation-duration: 20s;
+    animation-duration: 11s;
 }
 
 .particle:nth-child(4) {
@@ -71,7 +71,7 @@
     background: radial-gradient(circle, rgba(241, 196, 15, 0.7) 0%, rgba(241, 196, 15, 0.2) 70%);
     top: 30%;
     left: 70%;
-    animation-duration: 28s;
+    animation-duration: 11s;
 }
 
 .particle:nth-child(5) {
@@ -80,7 +80,7 @@
     background: radial-gradient(circle, rgba(231, 76, 60, 0.6) 0%, rgba(231, 76, 60, 0.2) 70%);
     top: 70%;
     left: 10%;
-    animation-duration: 20s;
+    animation-duration: 11s;
 }
 
 .particle:nth-child(6) {
@@ -89,7 +89,7 @@
     background: radial-gradient(circle, rgba(52, 152, 219, 0.7) 0%, rgba(52, 152, 219, 0.2) 70%);
     top: 20%;
     left: 40%;
-    animation-duration: 20s;
+    animation-duration: 11s;
 }
 
 .particle:nth-child(7) {
@@ -98,7 +98,7 @@
     background: radial-gradient(circle, rgba(142, 68, 173, 0.6) 0%, rgba(142, 68, 173, 0.2) 70%);
     top: 85%;
     left: 60%;
-    animation-duration: 26s;
+    animation-duration: 11s;
 }
 
 .particle:nth-child(8) {
@@ -107,7 +107,7 @@
     background: radial-gradient(circle, rgba(52, 73, 94, 0.7) 0%, rgba(52, 73, 94, 0.2) 70%);
     top: 45%;
     left: 15%;
-    animation-duration: 20s;
+    animation-duration: 11s;
 }
 
 .particle:nth-child(9) {
@@ -116,7 +116,7 @@
     background: radial-gradient(circle, rgba(39, 167, 167, 0.5) 0%, rgba(39, 167, 167, 0.1) 70%);
     top: 15%;
     left: 85%;
-    animation-duration: 20s;
+    animation-duration: 11s;
 }
 
 .particle:nth-child(10) {
@@ -125,7 +125,7 @@
     background: radial-gradient(circle, rgba(46, 204, 113, 0.6) 0%, rgba(46, 204, 113, 0.2) 70%);
     top: 55%;
     left: 45%;
-    animation-duration: 29s;
+    animation-duration: 11s;
 }
 
 @keyframes floatParticle {
