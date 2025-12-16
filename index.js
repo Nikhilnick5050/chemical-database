@@ -3,7 +3,7 @@
 
 
 
-    <script>
+   
         // Chemical data with 110+ entries
         const chemicals = [
             {
