@@ -1,159 +1,660 @@
-
-<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <
-            <p>Understanding laboratory chemicals involves knowledge of their properties, functions, applications, hazards, and safety protocols.</p>
-        </div>
-    </div>
-</section>
-
-
-     class="search-btn" id="searchBtn">
-                        <i class="fas fa-search"></i> Search
-                    </button>
-                </div>
-            </div>
-
-            <
-                <
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Chemicals Section -->
-    <section id="chemicals">
-        <div class="container">
-            <h2 class="section-title"> -->
-            <div class="chemicals-grid" id="chemicalsGrid">
-                <!-- Chemical cards will be added by JavaScript -->
-            </div>
-        </div>
-    </section>
-
-    <!-- References Section -->
-   <style>
-    /* Section – Transparent without frost/blur */
-    #references {
-        background: rgba(255, 255, 255, 0.08); /* light transparent */
-        padding: 60px 20px;
-        border-radius: 20px;
-        border: 2px solid rgba(255, 255, 255, 0.18);
-        box-shadow: 0 0 25px rgba(0, 255, 132, 0.25
-
-            <div class="references-panel">
-                <div class="references-grid">
-                    <div class="reference-category">
-                        <h3><i class="fas fa-database"></i> Chemical Databases</h3>
-                        <ul>
-                            <li><a href="https://pubchem.ncbi.nlm.nih.gov" target="_blank">PubChem - U.S. National Library of Medicine</a></li>
-                            <li><a href="https://www.chemspider.com" target="_blank">ChemSpider - Chemical Structures Database</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="reference-category">
-                        <h3><i class="fas fa-graduation-cap"></i> Educational Resources</h3>
-                        <ul>
-                            <li><a href="https://chem.libretexts.org" target="_blank">LibreTexts Chemistry</a></li>
-                            <li><a href="https://www.ck12.org/chemistry" target="_blank">CK-12 Chemistry Textbook</a></li>
-                            <li><a href="https://www.chemguide.co.uk" target="_blank">ChemGuide - Learning Resource</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="reference-category">
-                        <h3><i class="fas fa-shield-alt"></i> Safety & Regulations</h3>
-                        <ul>
-                            <li>Chemical Safety Data Sheets (SDS)</li>
-                            <li>OSHA Laboratory Safety Standards</li>
-                            <li>NFPA Hazard Rating System</li>
-                        </ul>
-                    </div>
-
-                    <div class="reference-category">
-                        <h3><i class="fas fa-flask"></i> Laboratory Resources</h3>
-                        <ul>
-                            <li>PCCOE Chemistry Laboratory Manuals</li>
-                            <li>Academic Chemistry Textbooks</li>
-                            <li>Open Educational Resources</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-    <!-- Acknowledgement Section -->
-   <style>
-    /* Section – Transparent without frost/blur */
-    #acknowledgement {
-        background: rgba(255, 255, 255, 0.08); /* light transparent */
-        padding: 60px 20px;
-        border-radius: 20px;
-        border: 2px solid rgba(255, 255, 255, 0.18);
-        box-shadow: 0 0 25px rgba(0, 255, 132, 0.25);
-        margin: 60px auto;
-        width: 90%;
-        max-width: 1200px;
-        animation: fadeInSection 1.2s ease forwards;
-    }
-
-    /* Title (bold + neon) */
-    #acknowledgement .section-title {
-        text-align: center;
-        font-size: 2.4rem;
-        font-weight: 900;
-        color: #00ffb0;
-        margin-bottom: 30px;
-        text-shadow: 0 0 15px #00ff84;
-        animation: fadeInText 1.2s ease;
-    }
-
-    /* Paragraph styling */
-    .acknowledgement-content p {
-        font-size: 1.15rem;
-        line-height: 1.8;
-        color: #e8e8e8;
-        font-weight: 700;
-        margin-bottom: 18px;
-        animation: fadeParagraphs 1.4s ease;
-    }
-</style>
-
-<section id="acknowledgement">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemical Database - The End</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #0c0c1d;
+            color: #e0e0ff;
+            min-height: 100vh;
+            overflow-x: hidden;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(28, 58, 173, 0.15) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(138, 43, 226, 0.15) 0%, transparent 20%);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 30px 0;
+            border-bottom: 1px solid rgba(100, 150, 255, 0.3);
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            background: linear-gradient(90deg, #6ee7b7, #3b82f6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 10px;
+            letter-spacing: 1.5px;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: #a5b4fc;
+            font-style: italic;
+        }
+        
+        .database-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        
+        .chemical-structure {
+            flex: 1;
+            min-width: 300px;
+            background: rgba(16, 23, 41, 0.7);
+            border-radius: 15px;
+            padding: 25px;
+            border: 1px solid rgba(100, 150, 255, 0.2);
+            box-shadow: 0 10px 30px rgba(0, 10, 60, 0.3);
+        }
+        
+        .chemical-title {
+            font-size: 1.8rem;
+            color: #60a5fa;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .chemical-title i {
+            color: #6ee7b7;
+        }
+        
+        .molecule {
+            width: 100%;
+            height: 200px;
+            position: relative;
+            margin: 20px 0;
+        }
+        
+        .atom {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 12px;
+            color: white;
+            z-index: 2;
+        }
+        
+        .bond {
+            position: absolute;
+            height: 3px;
+            background-color: #60a5fa;
+            transform-origin: 0 0;
+            z-index: 1;
+        }
+        
+        .chemical-properties {
+            margin-top: 20px;
+        }
+        
+        .property {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px dashed rgba(100, 150, 255, 0.2);
+        }
+        
+        .property-name {
+            color: #a5b4fc;
+        }
+        
+        .property-value {
+            color: #6ee7b7;
+            font-weight: 600;
+        }
+        
+        .data-flow {
+            flex: 1;
+            min-width: 300px;
+            background: rgba(16, 23, 41, 0.7);
+            border-radius: 15px;
+            padding: 25px;
+            border: 1px solid rgba(100, 150, 255, 0.2);
+            box-shadow: 0 10px 30px rgba(0, 10, 60, 0.3);
+        }
+        
+        .data-title {
+            font-size: 1.8rem;
+            color: #60a5fa;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .data-title i {
+            color: #f472b6;
+        }
+        
+        .data-node {
+            width: 100%;
+            height: 200px;
+            position: relative;
+            margin: 20px 0;
+        }
+        
+        .node {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(96, 165, 250, 0.2);
+            border: 2px solid #60a5fa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .connection {
+            position: absolute;
+            height: 3px;
+            background-color: #f472b6;
+            transform-origin: 0 0;
+            z-index: 1;
+        }
+        
+        .ending-section {
+            text-align: center;
+            padding: 50px 20px;
+            background: rgba(16, 23, 41, 0.8);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 100, 100, 0.3);
+            margin-bottom: 40px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .ending-title {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #fca5a5;
+            text-shadow: 0 0 10px rgba(255, 100, 100, 0.5);
+        }
+        
+        .message-container {
+            display: inline-block;
+            padding: 30px 50px;
+            background: rgba(220, 38, 38, 0.1);
+            border-radius: 10px;
+            border: 2px solid #f87171;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .final-message {
+            font-size: 3.5rem;
+            font-weight: 900;
+            background: linear-gradient(90deg, #fca5a5, #dc2626);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            letter-spacing: 2px;
+            line-height: 1.3;
+        }
+        
+        .sub-message {
+            font-size: 1.5rem;
+            color: #a5b4fc;
+            margin-top: 20px;
+            font-style: italic;
+        }
+        
+        .chemical-reaction {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+        
+        .reaction-element {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: white;
+        }
+        
+        .plus {
+            font-size: 2rem;
+            color: #6ee7b7;
+        }
+        
+        .arrow {
+            font-size: 2rem;
+            color: #f472b6;
+        }
+        
+        .result {
+            font-size: 1.5rem;
+            color: #fca5a5;
+            padding: 10px 20px;
+            background: rgba(220, 38, 38, 0.1);
+            border-radius: 8px;
+            border: 1px solid #f87171;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #a5b4fc;
+            border-top: 1px solid rgba(100, 150, 255, 0.3);
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+        
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { opacity: 0.7; }
+            50% { opacity: 1; }
+            100% { opacity: 0.7; }
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .final-message {
+                font-size: 2.5rem;
+            }
+            
+            .chemical-structure, .data-flow {
+                min-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
     <div class="container">
-        <h2 class="section-title">Acknowledgement</h2>
+        <header>
+            <h1>Chemical Database System</h1>
+            <p class="subtitle">Advanced Molecular Data Repository & Analysis Platform</p>
+        </header>
+        
+        <section class="database-section">
+            <div class="chemical-structure">
+                <h2 class="chemical-title"><i class="fas fa-atom"></i> Molecular Structure</h2>
+                <div class="molecule" id="molecule">
+                    <!-- Atoms and bonds will be generated by JavaScript -->
+                </div>
+                <div class="chemical-properties">
+                    <div class="property">
+                        <span class="property-name">Compound Name:</span>
+                        <span class="property-value">Teamium Disappointide</span>
+                    </div>
+                    <div class="property">
+                        <span class="property-name">Molecular Formula:</span>
+                        <span class="property-value">T<sub>3</sub>D<sub>2</sub></span>
+                    </div>
+                    <div class="property">
+                        <span class="property-name">Stability:</span>
+                        <span class="property-value">Low</span>
+                    </div>
+                    <div class="property">
+                        <span class="property-name">Toxicity:</span>
+                        <span class="property-value">Extremely High</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="data-flow">
+                <h2 class="data-title"><i class="fas fa-project-diagram"></i> Data Flow Analysis</h2>
+                <div class="data-node" id="dataNode">
+                    <!-- Data nodes will be generated by JavaScript -->
+                </div>
+                <div class="chemical-properties">
+                    <div class="property">
+                        <span class="property-name">Data Integrity:</span>
+                        <span class="property-value">Compromised</span>
+                    </div>
+                    <div class="property">
+                        <span class="property-name">Team Collaboration:</span>
+                        <span class="property-value">Non-existent</span>
+                    </div>
+                    <div class="property">
+                        <span class="property-name">Project Status:</span>
+                        <span class="property-value">Failed</span>
+                    </div>
+                    <div class="property">
+                        <span class="property-name">Conclusion:</span>
+                        <span class="property-value">Inevitability of Hate</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <div class="chemical-reaction">
+            <div class="reaction-element" style="background-color: #3b82f6;">T</div>
+            <div class="plus">+</div>
+            <div class="reaction-element" style="background-color: #8b5cf6;">E</div>
+            <div class="plus">+</div>
+            <div class="reaction-element" style="background-color: #10b981;">A</div>
+            <div class="plus">+</div>
+            <div class="reaction-element" style="background-color: #f59e0b;">M</div>
+            <div class="arrow"><i class="fas fa-long-arrow-alt-right"></i></div>
+            <div class="result">DISASTER</div>
+        </div>
+        
+        <section class="ending-section">
+            <h2 class="ending-title">FINAL DATABASE ANALYSIS REPORT</h2>
+            <div class="message-container">
+                <div class="final-message" id="finalMessage">I HATE YOU TEAM</div>
+                <div class="sub-message">End of Chemical Database Project</div>
+            </div>
+        </section>
+        
+        <footer class="footer">
+            <p>Chemical Database System v4.2 • Final Report Generated: <span id="currentDate"></span></p>
+            <p>All data analysis conclusively points to team failure. No further research recommended.</p>
+        </footer>
+    </div>
 
-        <div class="acknowledgement-content">
-            <p>I hate you </p>
-            < 
-          
-   
-
-<script src="index.js"></script>
-
+    <script>
+        // Set current date in footer
+        document.getElementById('currentDate').textContent = new Date().toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+        
+        // Create molecule structure
+        const molecule = document.getElementById('molecule');
+        const atoms = [];
+        const bonds = [];
+        
+        // Create atoms
+        const atomPositions = [
+            {id: 'C', x: 100, y: 100, color: '#10b981'},
+            {id: 'O', x: 200, y: 100, color: '#ef4444'},
+            {id: 'N', x: 150, y: 50, color: '#3b82f6'},
+            {id: 'H', x: 50, y: 150, color: '#6b7280'},
+            {id: 'H', x: 150, y: 180, color: '#6b7280'},
+            {id: 'T', x: 250, y: 150, color: '#f59e0b'}
+        ];
+        
+        atomPositions.forEach((atom, index) => {
+            const atomEl = document.createElement('div');
+            atomEl.className = 'atom';
+            atomEl.textContent = atom.id;
+            atomEl.style.left = `${atom.x - 10}px`;
+            atomEl.style.top = `${atom.y - 10}px`;
+            atomEl.style.backgroundColor = atom.color;
+            atomEl.style.boxShadow = `0 0 10px ${atom.color}`;
+            molecule.appendChild(atomEl);
+            atoms.push(atomEl);
+            
+            // Animate atoms on page load
+            gsap.from(atomEl, {
+                duration: 1,
+                scale: 0,
+                opacity: 0,
+                delay: index * 0.1,
+                ease: "back.out(1.7)"
+            });
+        });
+        
+        // Create bonds between atoms
+        const bondConnections = [
+            {from: 0, to: 1},
+            {from: 0, to: 2},
+            {from: 0, to: 3},
+            {from: 0, to: 4},
+            {from: 1, to: 5}
+        ];
+        
+        bondConnections.forEach((bond, index) => {
+            const fromAtom = atomPositions[bond.from];
+            const toAtom = atomPositions[bond.to];
+            
+            const dx = toAtom.x - fromAtom.x;
+            const dy = toAtom.y - fromAtom.y;
+            const length = Math.sqrt(dx * dx + dy * dy);
+            const angle = Math.atan2(dy, dx) * (180 / Math.PI);
+            
+            const bondEl = document.createElement('div');
+            bondEl.className = 'bond';
+            bondEl.style.width = `${length}px`;
+            bondEl.style.left = `${fromAtom.x}px`;
+            bondEl.style.top = `${fromAtom.y}px`;
+            bondEl.style.transform = `rotate(${angle}deg)`;
+            molecule.appendChild(bondEl);
+            bonds.push(bondEl);
+            
+            // Animate bonds
+            gsap.from(bondEl, {
+                duration: 1,
+                scaleX: 0,
+                opacity: 0,
+                delay: 0.5 + index * 0.1,
+                ease: "power2.out"
+            });
+        });
+        
+        // Create data flow nodes
+        const dataNode = document.getElementById('dataNode');
+        const nodes = [];
+        const connections = [];
+        
+        // Create nodes
+        const nodePositions = [
+            {id: 'DB', x: 50, y: 100, color: '#3b82f6'},
+            {id: 'API', x: 150, y: 50, color: '#8b5cf6'},
+            {id: 'UI', x: 250, y: 100, color: '#10b981'},
+            {id: 'TEAM', x: 150, y: 150, color: '#ef4444'}
+        ];
+        
+        nodePositions.forEach((node, index) => {
+            const nodeEl = document.createElement('div');
+            nodeEl.className = 'node';
+            nodeEl.textContent = node.id;
+            nodeEl.style.left = `${node.x - 20}px`;
+            nodeEl.style.top = `${node.y - 20}px`;
+            nodeEl.style.backgroundColor = node.color;
+            nodeEl.style.borderColor = node.color;
+            nodeEl.style.boxShadow = `0 0 15px ${node.color}`;
+            dataNode.appendChild(nodeEl);
+            nodes.push(nodeEl);
+            
+            // Animate nodes
+            gsap.from(nodeEl, {
+                duration: 1,
+                scale: 0,
+                opacity: 0,
+                delay: 1 + index * 0.2,
+                ease: "elastic.out(1, 0.5)"
+            });
+        });
+        
+        // Create connections between nodes
+        const nodeConnections = [
+            {from: 0, to: 1},
+            {from: 1, to: 2},
+            {from: 1, to: 3},
+            {from: 3, to: 2}
+        ];
+        
+        nodeConnections.forEach((conn, index) => {
+            const fromNode = nodePositions[conn.from];
+            const toNode = nodePositions[conn.to];
+            
+            const dx = toNode.x - fromNode.x;
+            const dy = toNode.y - fromNode.y;
+            const length = Math.sqrt(dx * dx + dy * dy);
+            const angle = Math.atan2(dy, dx) * (180 / Math.PI);
+            
+            const connEl = document.createElement('div');
+            connEl.className = 'connection';
+            connEl.style.width = `${length}px`;
+            connEl.style.left = `${fromNode.x}px`;
+            connEl.style.top = `${fromNode.y}px`;
+            connEl.style.transform = `rotate(${angle}deg)`;
+            dataNode.appendChild(connEl);
+            connections.push(connEl);
+            
+            // Animate connections with pulsing effect
+            gsap.from(connEl, {
+                duration: 1.5,
+                scaleX: 0,
+                opacity: 0,
+                delay: 1.5 + index * 0.2,
+                ease: "power2.out"
+            });
+            
+            // Add pulsing animation to connections
+            gsap.to(connEl, {
+                duration: 2,
+                opacity: 0.5,
+                repeat: -1,
+                yoyo: true,
+                delay: 2 + index * 0.1
+            });
+        });
+        
+        // Main animation sequence
+        const tl = gsap.timeline();
+        
+        // Animate the final message
+        const finalMessage = document.getElementById('finalMessage');
+        const messageChars = finalMessage.textContent.split('');
+        finalMessage.textContent = '';
+        
+        messageChars.forEach(char => {
+            const charSpan = document.createElement('span');
+            charSpan.textContent = char;
+            charSpan.style.display = 'inline-block';
+            finalMessage.appendChild(charSpan);
+        });
+        
+        // Create character animation
+        tl.to('.ending-section', {
+            duration: 1,
+            backgroundColor: 'rgba(30, 10, 30, 0.9)',
+            borderColor: 'rgba(255, 50, 50, 0.5)',
+            boxShadow: '0 0 30px rgba(220, 38, 38, 0.5)',
+            ease: 'power2.inOut'
+        })
+        .fromTo('.ending-title', 
+            { opacity: 0, y: 30 },
+            { opacity: 1, y: 0, duration: 1, ease: 'back.out(1.7)' }
+        )
+        .fromTo('.message-container', 
+            { scale: 0.8, opacity: 0 },
+            { scale: 1, opacity: 1, duration: 1, ease: 'elastic.out(1, 0.5)' }
+        );
+        
+        // Animate each character of the final message
+        const messageSpans = finalMessage.querySelectorAll('span');
+        messageSpans.forEach((span, i) => {
+            tl.fromTo(span,
+                { 
+                    opacity: 0, 
+                    y: 50, 
+                    rotation: 180,
+                    color: '#3b82f6'
+                },
+                { 
+                    opacity: 1, 
+                    y: 0, 
+                    rotation: 0,
+                    color: '#fca5a5',
+                    duration: 0.5,
+                    ease: 'back.out(1.7)'
+                },
+                '-=0.3'
+            );
+        });
+        
+        // Add shaking effect to the message
+        tl.to('.message-container', {
+            duration: 0.1,
+            x: 10,
+            repeat: 5,
+            yoyo: true,
+            ease: 'power1.inOut'
+        })
+        .to('.final-message', {
+            duration: 2,
+            textShadow: '0 0 20px #dc2626, 0 0 40px #dc2626',
+            repeat: -1,
+            yoyo: true,
+            ease: 'power1.inOut'
+        });
+        
+        // Animate chemical reaction
+        const reactionElements = document.querySelectorAll('.reaction-element, .plus, .arrow, .result');
+        reactionElements.forEach((el, i) => {
+            gsap.from(el, {
+                duration: 1,
+                opacity: 0,
+                scale: 0,
+                delay: 2 + i * 0.2,
+                ease: "back.out(1.7)"
+            });
+        });
+        
+        // Add continuous animation to atoms
+        atoms.forEach((atom, i) => {
+            gsap.to(atom, {
+                duration: 2 + i * 0.2,
+                y: '+=10',
+                repeat: -1,
+                yoyo: true,
+                ease: 'sine.inOut',
+                delay: i * 0.3
+            });
+        });
+        
+        // Add continuous animation to nodes
+        nodes.forEach((node, i) => {
+            gsap.to(node, {
+                duration: 3,
+                rotation: 360,
+                repeat: -1,
+                ease: 'none',
+                delay: i * 0.5
+            });
+        });
+    </script>
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
